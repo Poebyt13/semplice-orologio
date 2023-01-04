@@ -1,0 +1,69 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(44, 44, 46) 35%, rgb(0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main{
+    color: white;
+    width: 50%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orario{
+    display: flex;
+    font-size: 10rem;
+}
+
+.main div p{
+    user-select: none;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    animation-name: colorLetra;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-shadow: 0px 0px 40px white;
+
+    background-image: linear-gradient(to left, rgb(235, 6, 6), rgb(170, 0, 170),rgb(18, 193, 70), rgb(236, 236, 9), hsla(195, 78%, 48%, 0.827), rgb(246, 0, 189));
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation-direction: alternate;
+    background-size: 500%;    
+}
+
+.info__orario{
+    font-size: 2.5rem !important;
+}
+
+.puntos{
+    margin-bottom: .5rem;
+}
+
+
+@keyframes colorLetra {
+    from{
+        background-position: 0% 50%;
+    }
+
+
+    to{
+        background-position: 100% 50%;
+    }
+}
